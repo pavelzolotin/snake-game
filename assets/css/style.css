@@ -1,0 +1,115 @@
+html {
+  font-size: 62.5%; }
+
+body {
+  overflow: hidden;
+  font-family: 'Source Code Pro', monospace;
+  background: -webkit-linear-gradient(to right, #78ffd6, #a8ff78);
+  background: linear-gradient(to right, #78ffd6, #a8ff78); }
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh; }
+
+.game__grid {
+  display: flex;
+  flex-wrap: wrap;
+  width: 30rem;
+  height: 30rem;
+  border: 0.2rem solid rgba(153, 153, 153, 0.4);
+  margin-bottom: 7rem; }
+  .game__grid div {
+    width: 3rem;
+    height: 3rem; }
+
+.game__btn-wrapper {
+  position: relative; }
+  .game__btn-wrapper:nth-child(2) {
+    margin-bottom: 2rem; }
+
+.game button {
+  display: block;
+  font-family: 'Source Code Pro', monospace;
+  font-size: 2rem;
+  line-height: 3.2rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: .2rem;
+  padding: 1rem 2rem;
+  background-color: #444;
+  color: white;
+  border-radius: 1rem;
+  border: 0;
+  cursor: pointer; }
+
+.game button:focus-visible {
+  outline: none; }
+
+.game__btn-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: calc(100% + 0.4rem);
+  height: calc(100% + 0.4rem);
+  background: linear-gradient(90deg, #FF8038 0%, #FF0099 30.43%, #00EBEB 68.23%, #DB00FF 100%);
+  background-size: 600% 600%;
+  border-radius: 1rem;
+  animation: AnimateBorder 3s ease infinite;
+  -webkit-animation: AnimateBorder 3s ease infinite;
+  -moz-animation: AnimateBorder 3s ease infinite;
+  z-index: -1;
+  transform: translate(-0.2rem, -0.2rem);
+  transition: filter 1s ease-in; }
+
+.game .button-wrapper:hover .button-bg {
+  filter: blur(1rem);
+  transition: filter .3s ease-in; }
+
+@-webkit-keyframes AnimateBorder {
+  0% {
+    background-position: 0% 50%; }
+  50% {
+    background-position: 100% 50%; }
+  100% {
+    background-position: 0% 50%; } }
+
+@-moz-keyframes AnimateBorder {
+  0% {
+    background-position: 0% 50%; }
+  50% {
+    background-position: 100% 50%; }
+  100% {
+    background-position: 0% 50%; } }
+
+@keyframes AnimateBorder {
+  0% {
+    background-position: 0% 50%; }
+  50% {
+    background-position: 100% 50%; }
+  100% {
+    background-position: 0% 50%; } }
+
+.game__score {
+  display: block;
+  font-size: 2.4rem;
+  line-height: 3.2rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: .2rem;
+  color: #444;
+  margin-top: 4rem; }
+
+.snake {
+  background: -webkit-linear-gradient(to right, #8e2de2, #4a00e0);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #8e2de2, #4a00e0);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */ }
+
+.apple {
+  background: -webkit-linear-gradient(to right, #56ab2f, #a8e063);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #56ab2f, #a8e063);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */ }
