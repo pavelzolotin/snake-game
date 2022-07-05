@@ -21,6 +21,9 @@ body {
   height: 30rem;
   border: 0.2rem solid rgba(153, 153, 153, 0.4);
   margin-bottom: 7rem; }
+  @media (max-width: 767px) {
+    .game__grid {
+      margin-bottom: 2rem; } }
   .game__grid div {
     width: 3rem;
     height: 3rem; }
@@ -44,6 +47,10 @@ body {
   border-radius: 1rem;
   border: 0;
   cursor: pointer; }
+  @media (max-width: 767px) {
+    .game button {
+      font-size: 1.6rem;
+      padding: .5rem 2rem; } }
 
 .game button:focus-visible {
   outline: none; }
@@ -101,6 +108,52 @@ body {
   letter-spacing: .2rem;
   color: #444;
   margin-top: 4rem; }
+  @media (max-width: 767px) {
+    .game__score {
+      font-size: 1.6rem;
+      padding: .5rem 2rem;
+      margin-top: 2rem; } }
+
+.game__btns-mobile {
+  display: none; }
+  @media (max-width: 767px) {
+    .game__btns-mobile {
+      display: flex;
+      width: 100%;
+      margin: auto;
+      position: relative;
+      height: 30%; } }
+
+.game__btn-mobile:nth-child(1) {
+  position: absolute;
+  top: 0;
+  left: 42%; }
+
+.game__btn-mobile:nth-child(2) {
+  position: absolute;
+  top: 30%;
+  right: 10%;
+  transform: rotate(90deg); }
+
+.game__btn-mobile:nth-child(3) {
+  position: absolute;
+  bottom: 10%;
+  left: 42%;
+  transform: rotate(180deg); }
+
+.game__btn-mobile:nth-child(4) {
+  position: absolute;
+  top: 30%;
+  left: 10%;
+  transform: rotate(-90deg); }
+
+.game__btn-mobile button {
+  font-size: 3rem;
+  padding: 0.8rem 1.8rem 1.5rem 1.8rem;
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.19), 0 0.4rem 0.4rem rgba(0, 0, 0, 0.23); }
+  .game__btn-mobile button:active {
+    background-color: #777;
+    transition: background-color .3s ease-in; }
 
 .snake {
   background: -webkit-linear-gradient(to right, #8e2de2, #4a00e0);
