@@ -4,8 +4,10 @@ html {
 body {
   overflow: hidden;
   font-family: 'Source Code Pro', monospace;
-  background: -webkit-linear-gradient(to right, #78ffd6, #a8ff78);
-  background: linear-gradient(to right, #78ffd6, #a8ff78); }
+  background: -webkit-linear-gradient(to right, #ece9e6, #ffffff);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #ece9e6, #ffffff);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */ }
 
 .container {
   display: flex;
@@ -38,7 +40,8 @@ body {
   align-items: center; }
   @media (max-width: 767px) {
     .game__btns-and-score {
-      flex-direction: row-reverse; } }
+      flex-direction: row-reverse;
+      align-items: start; } }
 
 .game__btn-box {
   display: flex;
