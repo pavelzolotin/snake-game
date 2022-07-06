@@ -14,10 +14,11 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 100vh; }
+  height: 90vh; }
   @media (max-width: 767px) {
     .container {
-      justify-content: start; } }
+      justify-content: start;
+      height: 100vh; } }
 
 .game__grid {
   display: flex;
@@ -196,3 +197,17 @@ body {
   /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(to right, #56ab2f, #a8e063);
   /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */ }
+
+.footer {
+  display: flex;
+  justify-content: center; }
+  @media (max-width: 767px) {
+    .footer {
+      display: none; } }
+  .footer__copyright p {
+    font-size: 1.4rem;
+    color: #444; }
+  .footer__copyright a {
+    color: #444;
+    text-decoration: none;
+    cursor: pointer; }
