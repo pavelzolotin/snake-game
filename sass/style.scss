@@ -206,7 +206,8 @@ body {
 
       &:active {
         background-color: #777;
-        transition: background-color .3s ease-in;
+        transform: scale(1.2);
+        transition: background-color .3s ease-in, transform .3s ease-in;
       }
     }
   }

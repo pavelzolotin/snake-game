@@ -14,7 +14,6 @@ document.addEventListener( 'DOMContentLoaded', () => {
     let intervalTime = 0
     let interval = 0
 
-
     //to start, and restart the game
     function startGame() {
         currentSnake.forEach( index => squares[index].classList.remove( 'snake' ) )
@@ -71,7 +70,6 @@ document.addEventListener( 'DOMContentLoaded', () => {
         squares[currentSnake[0]].classList.add( 'snake' )
     }
 
-
     //generate new apple once apple is eaten
     function randomApple() {
         do {
@@ -79,7 +77,6 @@ document.addEventListener( 'DOMContentLoaded', () => {
         } while ( squares[appleIndex].classList.contains( 'snake' ) ) //making sure apples don't appear on the snake
         squares[appleIndex].classList.add( 'apple' )
     }
-
 
     //assign functions to keycodes
     function control( e ) {
