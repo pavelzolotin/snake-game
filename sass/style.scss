@@ -1,3 +1,10 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+}
+
 html {
   font-size: 62.5%;
 }
@@ -17,12 +24,20 @@ body {
   height: 90vh;
 
   @media (max-width:767px) {
-    justify-content: start;
+    justify-content: space-around;
     height: 100vh;
+    margin: 3rem 0 0 0;
   }
 }
 
 .game {
+
+  &__grid-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
 
   &__grid {
     display: flex;
@@ -51,6 +66,7 @@ body {
     @media (max-width:767px) {
       flex-direction: row-reverse;
       align-items: start;
+      padding: 0 1.5rem 0 1.5rem;
     }
   }
 
@@ -153,7 +169,7 @@ body {
 
     @media (max-width:767px) {
       font-size: 1.6rem;
-      padding: 0.5rem 1rem;
+      padding: 0.5rem 1rem 0 0;
       margin-top: 0;
       text-align: center;
     }
@@ -165,9 +181,9 @@ body {
     @media (max-width:767px) {
       display: flex;
       width: 100%;
-      margin: 0 auto 0 auto;
+      margin: 0 auto;
       position: relative;
-      height: 30%;
+      height: 50%;
     }
   }
 
@@ -188,7 +204,7 @@ body {
 
     &:nth-child(3) {
       position: absolute;
-      bottom: 10%;
+      top: 30%;
       left: 42%;
       transform: rotate(180deg);
     }
@@ -207,7 +223,6 @@ body {
 
       &:active {
         background-color: #777;
-        transform: scale(1.2);
         transition: background-color .3s ease-in, transform .3s ease-in;
       }
     }
