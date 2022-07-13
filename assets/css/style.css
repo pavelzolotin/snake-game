@@ -25,7 +25,7 @@ body {
     .container {
       justify-content: space-around;
       height: 100vh;
-      margin: 3rem 0 0 0; } }
+      margin: 1rem 0 0 0; } }
 
 .game__grid-wrapper {
   display: flex;
@@ -175,19 +175,19 @@ body {
 
 .game__btn-mobile:nth-child(2) {
   position: absolute;
-  top: 30%;
+  top: 20%;
   right: 10%;
   transform: rotate(90deg); }
 
 .game__btn-mobile:nth-child(3) {
   position: absolute;
-  top: 30%;
+  top: 40%;
   left: 42%;
   transform: rotate(180deg); }
 
 .game__btn-mobile:nth-child(4) {
   position: absolute;
-  top: 30%;
+  top: 20%;
   left: 10%;
   transform: rotate(-90deg); }
 

@@ -26,7 +26,7 @@ body {
   @media (max-width:767px) {
     justify-content: space-around;
     height: 100vh;
-    margin: 3rem 0 0 0;
+    margin: 1rem 0 0 0;
   }
 }
 
@@ -197,21 +197,21 @@ body {
 
     &:nth-child(2) {
       position: absolute;
-      top: 30%;
+      top: 20%;
       right: 10%;
       transform: rotate(90deg);
     }
 
     &:nth-child(3) {
       position: absolute;
-      top: 30%;
+      top: 40%;
       left: 42%;
       transform: rotate(180deg);
     }
 
     &:nth-child(4) {
       position: absolute;
-      top: 30%;
+      top: 20%;
       left: 10%;
       transform: rotate(-90deg);
     }
